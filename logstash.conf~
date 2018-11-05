@@ -1,0 +1,25 @@
+# input {
+#     file {
+#         path => "/mnt/code/log-parse-example/Atlas.syslog"
+#     }
+    
+#     filter {
+#         grok {
+#             match => 
+#         }
+#     }
+# }
+
+input {
+    file {
+        path => "/mnt/code/log-parse-example/dummy.syslog"
+    }
+}
+
+filter {
+    grok {
+        match => { "message" => "%{IP:client} %{WORD:method} %{URIPATHPARAM:request} %{NUMBER:bytes} %{NUMBER:duration}" }
+    }
+}
+
+output { stdout {} }

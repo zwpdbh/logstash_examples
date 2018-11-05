@@ -1,0 +1,5 @@
+EXCEPTION_BASE1 ^[*]{3}( )+
+EXCEPTION_SUMMARY ([A-Z :/]+)([a-z]+)( )+[0-9]+( )+
+EXCEPTION_DETAIL [ a-z0-9]+([A-Z])(:)(\\[A-Za-z_0-9]+)+([.a-z]+)
+EXCEPTION_TIMESTAMP [ a-z]+( )[A-Za-z]{3}( )[a-zA-Z]{3}( )[0-9]{2}( )([0-9]{2}:[0-9]{2}:[0-9]{2})( )[0-9]{4}
+EXCEPTION_TIMEZONE ( \w+)+

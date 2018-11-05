@@ -1,0 +1,4 @@
+ERROR_HEAD (>>>> O/S ERROR:)
+ERROR_SUMMARY ([A-Z /]+)([a-z]+)( )+[0-9]+
+ERROR_DETAILS (.*)
+ERROR_REST (.*)

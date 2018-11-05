@@ -1,0 +1,13 @@
+ related to session Id 
+ (^Session( )*\w+( )*)(?<Session Key>.*)
+ ({"INPUT": {"Class": ")(?<input/class>( )*\w+(.)\w+)(", "Json": {"Class":")(?<input/json/class>( )*\w+(.)\w+)(","AccessKey":")(?<input/json/access_key>[-\w0-9]*)(","SecretKey":")(?<input/json/secret_key>[-\w0-9]*)(","Bucket":")(?<input/json/Bucket>[-\w0-9]*)(","Region":")(?<input/json/Region>[-\w0-9]*)(","Session":")(?<input/json/session>[-\w0-9]*)("}[,} ]*)("OUTPUT":)(?<output>.*)
+ ({"API_RESULT":)(?<API_RESULT>.*)
+ 
+ api Id 
+ ({"API":)(?<API>\[.*])(\W+ApiId\W+)(?<API_ID>( )*\d*)
+ 
+ exception 
+ (^[*]{3}( )+)(?<exception_summary>([A-Z :/]+)([a-z]+)( )+[0-9]+( )+)(?<exception_detail>[ a-z0-9]+([A-Z])(:)(\\[A-Za-z_0-9]+)+([.a-z]+))(?<timestamp>[ a-z]+( )[A-Za-z]{3}( )[a-zA-Z]{3}( )[0-9]{2}( )([0-9]{2}:[0-9]{2}:[0-9]{2})( )[0-9]{4})(?<time_zone>( \w+)+)
+ 
+ error
+(^[>]{4}( ))(?<error_summary>([A-Z :/]+)([a-z]+)( )+[0-9]+)(?<error_details>.*)

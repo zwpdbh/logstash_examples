@@ -1,0 +1,2 @@
+﻿{"API":[{"ObjectId":{"Class":"SPLM.PartCollection","OpenBaseDisplay":{"filename":"D:\\workdir\\prt\\SE_Stand.prt"}},"Class":"SPLM.Part"}],"ApiId":2}
+{"API_RESULT":[{"API_Error":11,"API_Message":"Internal error: memory access violation"}]}
